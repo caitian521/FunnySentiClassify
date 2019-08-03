@@ -34,7 +34,8 @@
 
 再次背景介绍：当年模型还不够强，通过人工构造知识是一个很好的方式。情感图式就是一个类似于知识图谱的情感图谱，我用的情感图式是基于人工和hownet构建的，每个情感类别扩展出了很多场景，大概长这个样子，想进一步了解情感图式的朋友也可以联系大连理工大学IR实验室。
 
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/schema.png" width = "300" height = "260" alt="欢快" align=left>  
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/schema.png" width = "300" height = "260" alt="欢快" align=center>  
+
 
 
 有了情感图式，分析文本情感类别就可以转化成计算文本和情感图式每个节点距离的问题了。我用的是余弦相似度，将文本表示成向量我用了两个方式  
@@ -49,8 +50,8 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 
 做了一个可视化展示
 
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "300" height = "260" alt="欢快" align=left>
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "300" height = "260" alt="欢快" align=right>  
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "300" height = "300" alt="欢快" align=left>
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "300" height = "300" alt="欢快" align=right>  
 
 
 

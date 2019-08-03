@@ -48,12 +48,6 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 2、基于tf-idf向量空间，词袋模型，对于词表进行了特殊的处理。由于是对文本的情感分类，所以很多词对于情感是是没有意义的。为了给词袋模型降维，我计算了每个词在不同类别情感语料中的tfidf值及其方差。方差大的很明显会是和情感有关的词，方差小的说明这个词各个情感写出现的频率差不多，可以不考虑。  
 3、实验说明：情感图式我只使用了二级节点，由于网易云音乐评论是没有标签的，因此实验阶段使用的公开的中文情感语料库。结果当然证明还是word2vec好（捂脸
 
-做了一个可视化展示
-
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "300" height = "300" alt="欢快" align=left>
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "300" height = "300" alt="欢快" align=right>  
-
-
 
 ##代码说明：
 
@@ -73,4 +67,13 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 	trainwordvec.py 	训练skip-gram语言模型，获得word2vec词向量
 	word2vecCos.py 	用分布式词向量计算文本与情感图式的相似度
 
-	predeal.py 	分析每个歌曲对应的每条评论情感类型，确定歌曲的情感
+	predeal.py 	分析每个歌曲对应的每条评论情感类型，确定歌曲的情感  
+
+
+做了一个可视化展示
+
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "350" height = "320" alt="欢快" align=left>
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "350" height = "320" alt="欢快" align=right>  
+
+
+

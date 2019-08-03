@@ -1,14 +1,14 @@
-#FunnySentiClassify
+# FunnySentiClassify
 
-##背景  
+## 背景  
 
 爬取网易云音乐评论，分析评论的情感类型，从而确定歌曲的情感类型。  
 
 这是本人本科毕业的工作，当时还没有bert，也不太会面向对象，所以技术层面可能还登不上台面。不过整个项目的构思完全出自于自己，兴趣驱动。周杰伦的歌一路伴着成长，周董的歌类型特别丰富，欢快的、悲伤的我都喜欢。但是有些冷门歌曲只看我就不知道它是哪一种，心情很丧的时候就是想听一些欢快的歌曲啊！！我不会音频分析，可是我会文本挖掘啊，于是乎拍脑袋想出来通过分析评论的情感确定歌曲的情感。感谢网易云音乐，营造了一个很好的社区氛围，再次致敬周董(●'◡'●)  
 
-##实现
+## 实现
 
-###数据准备  
+### 数据准备  
 
 2017年网易云音乐还有周杰伦的版权，不过虽然现在版权没有了，但是评论还能爬（突然发现这是珍贵资源啊，毕竟别的平台评论简直没法看，希望猪厂不要删掉这些数据。这里我提供了一份我爬的结果，50首周杰伦热门歌曲10w+条评论，[网盘地址](https://pan.baidu.com/s/1wzsa_xv6Gc8nEpSHpoIn6A)。
 
@@ -23,7 +23,7 @@
 这个api不光提供了评论数据的接口，还有用户的昵称、头像、是否会员，广大文本挖掘机可以充分发挥想象力，这里略去1万字。  
 
 
-###情感分析   
+### 情感分析   
 
 下面就是文本挖掘的范畴了。这里探讨三种简单的方式  
 
@@ -49,7 +49,7 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 3、实验说明：情感图式我只使用了二级节点，由于网易云音乐评论是没有标签的，因此实验阶段使用的公开的中文情感语料库。结果当然证明还是word2vec好（捂脸
 
 
-##代码说明：
+## 代码说明：
 
 	cloud.py	按照歌单爬取网易云音乐评论
 	commentGet.py	网易云音乐api加密解析
@@ -72,8 +72,8 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 
 做了一个可视化展示
 
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "350" height = "320" alt="欢快" align=left>
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "350" height = "320" alt="欢快" align=right>  
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "400" height = "320" alt="欢快" align=left>
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "400" height = "320" alt="欢快" align=right>  
 
 
 

@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 #from __future__ import unicode_literals
+'''
+"../../newfour_corpus.txt"
+'''
 import os
 import sys
 import jieba

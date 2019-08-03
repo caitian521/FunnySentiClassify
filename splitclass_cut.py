@@ -3,7 +3,7 @@
 Created on Sat May 3 16:37:43 2017
 
 @author: ct
-将语料分词，按情感类型存储在相应文档中，不保留标注格式
+将语料分词，按情感类型存储在相应文档中
 8个情感类别，不对其进行更细粒度划分
 D:\\eclipse-workspace\\docudeal\\deal\\emo_%s.txt
 D:\eclipse-workspace\docudeal\\deal\\corpus.txt

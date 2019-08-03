@@ -12,10 +12,10 @@
 
 2017年网易云音乐还有周杰伦的版权，不过虽然现在版权没有了，但是评论还能爬（突然发现这是珍贵资源啊，毕竟别的平台评论简直没法看，希望猪厂不要删掉这些数据。这里我提供了一份我爬的结果，50首周杰伦热门歌曲10w+条评论，[网盘地址](https://pan.baidu.com/s/1wzsa_xv6Gc8nEpSHpoIn6A)。
 
-首先得有歌曲目录“https://music.163.com/#/playlist?id=743929495”，此url便是50首周杰伦热门歌曲歌单。  
+首先得有歌曲目录“https:\/\/music.163.com\/#/playlist?id=743929495”，此url便是50首周杰伦热门歌曲歌单。  
 怎么获取歌曲id？  
 解析html可以发现歌曲id详见代码cloud.py 20-35行  
-评论就在这个api：url = "http://music.163.com/weapi/v1/resource/comments/R\_SO\_4\_%s/?csrf_token=" % id  
+评论就在这个api：url = <text src="http://music.163.com/weapi/v1/resource/comments/R_SO_4_%s/?csrf_token="> % id  
 这个api被加密了，但是一个优秀的爬虫不在怕的，commentGet.py对网易云音乐api进行了解析，我参考了这个reference。  
 
 
@@ -32,7 +32,7 @@
 
 2、基于情感图式的方法，通过计算文本与情感图式节点的相似度，判断情感类别。  
 
-再次背景介绍：当年模型还不够强，通过人工构造知识是一个很好的方式。情感图式就是一个类似于知识图谱的情感图谱，我用的情感图式是基于人工和hownet构建的，每个情感类别扩展出了很多场景，大概长这个样子，想进一步了解情感图式的朋友也可以联系大连理工大学IR实验室。
+再次背景介绍：当年模型还不够强，通过人工构造知识是一个很好的方式。情感图式就是一个类似于知识图谱的情感图谱，我用的情感图式是基于人工和hownet构建的，每个情感类别扩展出了很多场景，大概长这个样子，想进一步了解情感图式的朋友也可以联系 [大连理工大学IR实验室](http://ir.dlut.edu.cn).  
 
 <img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/schema.png" width = "300" height = "260" alt="欢快" align=center>  
 

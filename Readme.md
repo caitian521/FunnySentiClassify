@@ -15,7 +15,7 @@
 首先得有歌曲目录“https:\/\/music.163.com\/#/playlist?id=743929495”，此url便是50首周杰伦热门歌曲歌单。  
 怎么获取歌曲id？  
 解析html可以发现歌曲id详见代码cloud.py 20-35行  
-评论就在这个api：url = <text src="http://music.163.com/weapi/v1/resource/comments/R_SO_4_%s/?csrf_token="> % id  
+评论就在这个api：url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_%s/?csrf_token=" % id  
 这个api被加密了，但是一个优秀的爬虫不在怕的，commentGet.py对网易云音乐api进行了解析，我参考了这个reference。  
 
 
@@ -72,8 +72,8 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 
 做了一个可视化展示
 
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "400" height = "320" alt="欢快" align=left>
-<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "400" height = "320" alt="欢快" align=right>  
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "400" height = "520" alt="欢快" align=left>
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "400" height = "520" alt="欢快" align=right>  
 
 
 

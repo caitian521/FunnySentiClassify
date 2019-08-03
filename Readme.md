@@ -47,7 +47,9 @@ NLP发展到现在回头看看这些方法，令人咂舌啊！
 
 做了一个可视化展示
 
-![欢快](https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg){:height="100" width="100"}![悲伤](https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg){:height="100" width="100"}
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/happy_jay.jpg" width = "400" height = "260" alt="欢快" align=left>
+<img src="https://github.com/caitian521/FunnySentiClassify/blob/master/pic/sad_jay.jpg" width = "400" height = "260" alt="欢快" align=right>
+
 
 代码说明：
 

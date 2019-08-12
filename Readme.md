@@ -16,7 +16,7 @@
 怎么获取歌曲id？  
 解析html可以发现歌曲id详见代码cloud.py 20-35行  
 评论就在这个api：url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_%s/?csrf_token=" % id  
-这个api被加密了，但是一个优秀的爬虫不在怕的，commentGet.py对网易云音乐api进行了解析，我参考了这个reference。  
+这个api被加密了，但是一个优秀的爬虫不在怕的，commentGet.py对网易云音乐api进行了解析，我参考了这个[reference](https://www.zhihu.com/search?type=content&q=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E8%AF%84%E8%AE%BA%E7%88%AC%E8%99%AB)。  
 
 
 
